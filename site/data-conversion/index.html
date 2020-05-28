@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Data Conversion - Municipal Software Group</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data Conversion";
+    var mkdocs_page_input_path = "data-conversion.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Municipal Software Group</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting-started/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tables/">Tables</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Data Conversion</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#data-conversion">Data Conversion</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#charges">Charges</a></li>
+        
+            <li><a class="toctree-l3" href="#startup-charges">Startup Charges</a></li>
+        
+            <li><a class="toctree-l3" href="#unique-charge">Unique Charge</a></li>
+        
+            <li><a class="toctree-l3" href="#transfer-arrest-charges">Transfer Arrest Charges</a></li>
+        
+            <li><a class="toctree-l3" href="#warrant-charges">Warrant Charges</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../payments/">Payments</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../printing/">Printing</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Municipal Software Group</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Data Conversion</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="data-conversion">Data Conversion</h1>
+<h2 id="charges">Charges</h2>
+<p>Converting Data from an older program can be challenging.  This section's focus is on converting the Charges coming from both 'Cases' and 'Warrants'.</p>
+<p>The old charges may have different spellings, statute numbers and ordinance numbers.  All combinations of charges and numbers need to be converted to the new charges and numbers.  Before mapping the old to the new we need to firmly establish what the new Charges are to be.  This should be completed in the 'Startup Charges' Table under the Conversion Menu.  Each time the conversion routines are run, 'Startup Charges' is copied into the regular 'Charges' table.  For this reason, no changes should be made to the regular 'Charges' table until after the final conversion.  Instead 'Startup Charges' should be set to exactly the charges to which you want to convert.</p>
+<p><img alt="" src="../images/data-conversion/image001.png" /></p>
+<h2 id="startup-charges">Startup Charges</h2>
+<p>The 'Charge' field is used to identify this charge and must be unique.  It is a DROP DOWN from the 'State Charges' Table.  You do not, however, have
+to use the State Charge wording.  Unlike most DROP DOWN fields you may type what you want in this field without an error.   If this is a State Charge, you should use the 'Charge Code' from that charge even if you don't use the wording.   Normally the 'Charge Code' field and the 'State Charge Code' will be the same.  The Statute would come from the appropriate title (32, 13A, etc) with the appropriate paragraph if needed.  </p>
+<p><img alt="" src="../images/data-conversion/image002.png" />  </p>
+<p>If this is a local charge (not state) the ordinance number should be placed in the'Local Ordinance' field. If this is a state statute, your adopting ordinance number should be placed in 'Local Ordinance'.   A local charge would not have a 'Charge Code', 'State Charge Code',  'Statute' or 'Paragraph'.  All charges must have the 'Charge' wording and a number in 'Local Ordinance'.</p>
+<h2 id="unique-charge">Unique Charge</h2>
+<p>A point to repeat is that the Charge wording must be unique.  Thus, if you have 4 types of DISORDERLY CONDUCT with different paragraphs you need to find some way to distinguish them from each other. For Example:</p>
+<p><img alt="" src="../images/data-conversion/image003.png" />  </p>
+<p>It is very important that your 'Startup Charges' be accurate and decided upon before proceeding to translating the original charges.</p>
+<h2 id="transfer-arrest-charges">Transfer Arrest Charges</h2>
+<p>After the first phase of conversion routines run, the original charges are placed in the 'Transfer Arrest Charges' table.  Likewise, the charges from the original 'Warrants' are placed in the 'Transfer Warrant Charges' located in the 'Conversion Menu'.</p>
+<p><img alt="" src="../images/data-conversion/image004.png" />  </p>
+<p>The 'Transfer Arrest Charges' will contain every DISTINCT combination of Charge, Section, Paragraph, and Type from the old data. You may have many different versions of the same charge with only subtle differences.  The transfer routines need to know how to translate each combination.</p>
+<p><img alt="" src="../images/data-conversion/image005.png" />  </p>
+<p>Notice that the difference may be in the 'Charge' field or an added 0 in the 'Section' field or a 'Paragraph'. Each one needs to be translated to a record in your 'Startup Charges' Table.  This is why it is so important that 'Startup Charges' is perfected before proceeding to 'Transfer Charges'.</p>
+<p><img alt="" src="../images/data-conversion/image006.png" />  </p>
+<p>Every record in the 'Transfer Arrest Charges' table should have an entry in the 'Translate To' field.   You should only edit the 'Translate To' field and not touch the fields above from the original data.</p>
+<h2 id="warrant-charges">Warrant Charges</h2>
+<p>In the same manner the charges from the original Warrants need to be translated to charges in the 'Startup Charges'.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../payments/" class="btn btn-neutral float-right" title="Payments">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../tables/" class="btn btn-neutral" title="Tables"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../tables/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../payments/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

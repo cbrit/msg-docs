@@ -1,4 +1,11 @@
-site_name: Municipal Software Group     
+site_name: Municipal Software Group
+nav:
+    - Introduction: index.md
+    - Getting Started: getting-started.md
+    - Tables: tables.md
+    - Data Conversion: data-conversion.md
+    - Payments: payments.md
+    - Printing: printing.md
 theme:
     name: readthedocs
     highlightjs: true

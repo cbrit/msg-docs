@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Getting Started - Municipal Software Group</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Getting Started";
+    var mkdocs_page_input_path = "getting-started.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Municipal Software Group</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Introduction</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Getting Started</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#getting-started">Getting Started</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#terminology">Terminology</a></li>
+        
+            <li><a class="toctree-l3" href="#field-types">Field Types</a></li>
+        
+            <li><a class="toctree-l3" href="#keystrokes">Keystrokes</a></li>
+        
+            <li><a class="toctree-l3" href="#maneuvering-in-editadd-mode">Maneuvering in Edit/Add Mode</a></li>
+        
+            <li><a class="toctree-l3" href="#main-screen">Main Screen</a></li>
+        
+            <li><a class="toctree-l3" href="#tool-bar">Tool Bar</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../tables/">Tables</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data-conversion/">Data Conversion</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../payments/">Payments</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../printing/">Printing</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Municipal Software Group</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Getting Started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="getting-started">Getting Started</h1>
+<p>If you are new to our Court Manager software you will benefit from the information on this page which covers general terminology, keyboard shortcuts (or keystrokes), and navigation of the program.</p>
+<h2 id="terminology">Terminology</h2>
+<p>How about a few (yawn) definitions so that you will know whats being talked about?</p>
+<p><strong><em>Application</em></strong><br />
+The actual software running on your computer. Also referred to as an 'app' or 'program'. The icon you click on your screen 'launches' or starts running the  application on your computer.</p>
+<p><strong><em>SQL</em></strong><br />
+The type of database used to store all your records. SQL stands for Structured Query Language and is often referred to as 'Sequel'.<br />
+The data is stored on a SQL Server (either on your computer if it is not on a network or on a Network Server). On many of the report screens you will see the SQL language. It often starts with 'SELECT * FROM...'</p>
+<p><strong><em>FOCUS</em></strong><br />
+It is the point on the screen that currently has the attention of the computer. If a data entry field has the focus, typing on the keyboard will put the characters in that field. If a screen or data entry field has the focus, it signified in some way (Color Red or Blue) so that you, the user, knows where you are on the screen. </p>
+<p><strong><em>TOOL BAR</em></strong><br />
+A long, horizontal bar near the top of the Main Screen that contains icons that may be clicked on to perform certain tasks.</p>
+<p><img alt="" src="../images/getting-started/image002.png" /></p>
+<p><strong><em>TOOL TIPS</em></strong><br />
+Small help words that appear when placing (not clicking) the mouse over certain Data Fields or icons. Used to help identify the name of the the icon or data field and its intended use.</p>
+<p><img alt="" src="../images/getting-started/image003.png" /></p>
+<p><strong><em>STATUS BAR</em></strong><br />
+the horizontal bar across the bottom of the screen that simply informs the status of certain items such as the current Table Name, Number of Records in the Table, Current Date, etc.</p>
+<p><img alt="" src="../images/getting-started/image004.png" /></p>
+<p><strong><em>INFORMATION LINE</em></strong><br />
+the horizontal line across the bottom that provides certain information about what is happening. If the line turns red, an error has occurred. The idea is to be less intrusive with the errors and information so that you don't have to take the extra step of clicking on an error box every time.</p>
+<p><img alt="" src="../images/getting-started/image005.png" /></p>
+<p><strong><em>CURSOR</em></strong><br />
+the flashing line or box that shows exactly where you are typing.</p>
+<p><strong><em>BROWSE MODE</em></strong> 
+ You are just looking at Data. The focus is not on the data part of the screen. You are not adding or editing data. </p>
+<p><strong><em>EDIT MODE</em></strong> 
+Changing data on a record that was previously created. If you ESC (or abort) while in this mode, the record will go back to its original data.</p>
+<p><strong><em>ADD MODE</em></strong> 
+ Creating a record that was not previously there. ESC will abort the new record and it will not be saved.</p>
+<h2 id="field-types">Field Types</h2>
+<p>Fields are used to display or receive data. The kind of data received and the error checking that goes on depends on the type of field. While check boxes, buttons, etc. are not technically fields, they also are included here.</p>
+<p><strong><em>FREE FORM FIELD</em></strong><br />
+a data field in which anything may be typed. There is no error checking.  </p>
+<p><img alt="" src="../images/getting-started/image006.png" /></p>
+<p><strong><em>DATE FIELD</em></strong> 
+A field that must either be blank or contain a valid Date.</p>
+<p>Dates may be entered either with Year First dashes (2008-01-01) or Month/Day/Year slashes (1/1/2008 or 1/1/08). If the year is omitted, the current year is assumed. "2/25" would produce "02/25/2008". Likewise, if both the month and the year are omitted, the current month and year are used to format. "5" would produce "2/5/2008". Just the letter 'T' placed in the date field will put in Today's date. <img alt="" src="../images/getting-started/image007.png" /> becomes <img alt="" src="../images/getting-started/image008.png" /></p>
+<p><strong><em>DROP DOWN FIELD</em></strong><br />
+A field that is attached to a lookup table and has a down arrow button to the right. Anything entered in this field must be in the corresponding look up table or an error is generated. You may view the drop down list by clicking on the down arrow box or by pressing the F4 key. The Up/Down arrow keys may be used to highlight data and then the Enter Key to select data.</p>
+<p><img alt="" src="../images/getting-started/image009.png" /></p>
+<p>Clicking on the right arrow or typing Ctrl-B will allow you to open up the Lookup Table for Browsing or possible Editing.</p>
+<p><img alt="" src="../images/getting-started/image010.png" /></p>
+<p><strong><em>NAME DROP DOWN FIELD</em></strong><br />
+A Special Drop Down Field whose lookup is the Profile Table. Pressing F4 (or clicking down arrow) will display the Current Names in the Profile. As you start typing the display will change to that part of the Profile. You may at any point select a name.</p>
+<p><img alt="" src="../images/getting-started/image011.png" /></p>
+<p>By simply typing in a 7 digit AL Drivers License Number or a state code and DL Number (TX17034568), a search will be launched to locate that Profile. If no Profile is found, you may do a right click to select 'Create New Profile' or type CTRL-N to start the process of creating a new Profile.</p>
+<p><img alt="" src="../images/getting-started/image012.png" /></p>
+<p><strong><em>CHARGE DROP DOWN FIELD</em></strong><br />
+A Special Drop Down Field whose lookup is the Charge Table. F4 will display a list a charges from which to select. You may also put in the DPS number to select the charge. (1 is Speeding, 2 Reckless Driving, etc.)</p>
+<p><img alt="" src="../images/getting-started/image013.png" /></p>
+<p>becomes </p>
+<p><img alt="" src="../images/getting-started/image014.png" /></p>
+<p>Typing in Statute (i.e. 13A-11-10) will also convert to the appropriate charge. Typing in the first few letters of a charge (enough to be unique) will also find and select the Charge. ME will become MENACING</p>
+<p><strong><em>CHECK BOX</em></strong><br />
+ True or False. If checked (by mouse clicking or hitting space bar) the item is considered to be true.  </p>
+<p><img alt="" src="../images/getting-started/image015.png" /></p>
+<p><strong><em>BUTTON</em></strong><br />
+ A box to click on to press to initiate some action.</p>
+<p><img alt="" src="../images/getting-started/image016.png" /></p>
+<p><strong><em>D - BUTTON</em></strong><br />
+ A special Button to display a list of valid Court Dates/Times from which to choose. Pressing 'D' will display Court Dates: <img alt="" src="../images/getting-started/image018.png" /></p>
+<p><img alt="" src="../images/getting-started/image017.png" /></p>
+<p><strong><em>B - BUTTON</em></strong><br />
+A special Button to display Bench Note choices in Case Data.</p>
+<p><img alt="" src="../images/getting-started/image019.png" /></p>
+<p><strong><em>H - BUTTON</em></strong><br />
+A special Button on the Profile Screen to send the Name, Address, or Tag Number to a History Table.</p>
+<p><img alt="" src="../images/getting-started/image020.png" /></p>
+<p><strong><em>DATA GRID</em></strong><br />
+Displays multiple records from another table relating to this record.</p>
+<p><img alt="" src="../images/getting-started/image021.png" /></p>
+<p>Clicking on ADD will create a blank entry on the DataGrid and allow you to enter a new record. You may enter data right on the DataGrid. Double clicking on the Space to the left of a DataGrid record will cause another window will to up to let you Browse/Edit that record. </p>
+<h2 id="keystrokes">Keystrokes</h2>
+<h4 id="browse-mode-just-looking-at-data-not-editing-or-adding">Browse Mode (Just looking at data, not editing or adding)</h4>
+<p><strong>Ctrl-A</strong> - Add a new record  </p>
+<p><strong>Ctrl-E</strong> - Edit the current record  </p>
+<p><strong>Ctrl-N</strong> - Go to the next record based on the index  </p>
+<p><strong>Ctrl-P</strong> - Go to the previous record based on the index </p>
+<p><strong>Ctrl-D</strong> - Duplicates the current record. CASES, WARRANTS only.  </p>
+<p><strong>Ctrl-H</strong> - Hides the current screen until pressed again.  </p>
+<p><strong>Ctrl-L</strong> - Go to last Record. CASES, WARRANTS, PAYMENTS only.  </p>
+<p><strong>Ctrl-M</strong> - Open Payment Manager.  </p>
+<p><strong>Ctrl-O</strong> - Change the disposition of a warrant without being in edit mode. Normally used by Police.  </p>
+<p><strong>Ctrl-Q</strong> - Open Quick Search Dialog box appears to help search for a record.  </p>
+<p><strong>Ctrl-R</strong> - Open Restitution Manager.  </p>
+<p><strong>Ctrl-T</strong> - Change Tables based on the Table Name with an option to make the table a pop-up. Alternatively, it is probably easier to use the Table Menu.  </p>
+<p><strong>Ctrl-C</strong> - Print Case Action Summary  </p>
+<p><strong>Ctrl-W</strong> - Print a warrant  </p>
+<p><strong>Ctrl-X</strong> - Recall a warrant  </p>
+<p><strong>Ctrl-4</strong> - Print Form 44B Guilty Plea Waiver  </p>
+<p><strong>Ctrl-7</strong> - Print a UTC-7  </p>
+<p><strong>Ctrl-8</strong> - Go to Appearance Bond.  </p>
+<p><strong>F1</strong> - Search for a Record  </p>
+<p><strong>Ctrl-F1</strong> - Search for a Record. If in Warrants, Outstanding only.  </p>
+<p><strong>F5</strong> - Stores the current record in a "ditto" buffer for later retrieval. F5 in the Browse mode will store the record, while F5 in the Add/Edit will retrieve that field previously stored.</p>
+<h4 id="editadd-mode">Edit/Add Mode</h4>
+<p>(Many of the above Browse commands will also work in edit mode.)</p>
+<p><strong>Ctrl-F</strong> - Easily change fine in Payment Manager.</p>
+<p><strong>Ctrl-B</strong> - Browse Lookup Table from a field that has a drop down box. Same As right clicking on a drop drown box and making the Browse selection. A separate screen will appear so that information for this drop down box may be browsed or edited.</p>
+<p><strong>Ctrl-U</strong>  Add an Event in to the Event DataGrid</p>
+<p><strong>F3</strong> - Clear the field from the point of the cursor on</p>
+<p><strong>F4</strong> - If in a drop down box, activate the choice list to appear.</p>
+<p><strong>F5</strong> - Put Data into the field that currently has the Focus from the record that was previously dittoed in Browse mode. <strong>Ctrl-F5</strong> - Put data in all fields of the current record from the previously dittoed record. <strong>F9</strong> - Save the current record.</p>
+<h2 id="maneuvering-in-editadd-mode">Maneuvering in Edit/Add Mode</h2>
+<p><strong>Up Arrow</strong> - transfers focus to the closest field on the line above</p>
+<p><strong>Down Arrow</strong> - transfers focus to the closest field on the line below</p>
+<p><strong>Left Arrow</strong> - Moves the cursor to the LEFT one character in current field. If the cursor is at the beginning of the field, focus is changed to the previous field.</p>
+<p><strong>Right Arrow</strong> - Moves the cursor to the RIGHT one character in current field. If the cursor is at the end of the field, focus is changed to next field.</p>
+<p><strong>Tab or Enter</strong> - Will cause the focus to go to the next field in the current table. If the focus is on the last field, the record will save and go to Browse mode.</p>
+<p><strong>Page Up/Down</strong> - Will move the form Up or Down. If the Form fits entirely on the current screen there is no effect. Focus is not changed with  this action.</p>
+<p><strong>Mouse Wheel</strong> - the Wheel on the mouse may be used to move scrollable screens</p>
+<p><strong>Drag Scroll Bar</strong> - the Scroll Bar may be dragged to position the Form in the desired location.</p>
+<p><strong>Left Click</strong> - Focus may be changed directly to another field by Left clicking on the desired field.</p>
+<h2 id="main-screen">Main Screen</h2>
+<p>The MAIN SCREEN consists of a Menu (across the top), a Tool Bar, a Data Table Record Display, a Status Bar and an Information Line (across the bottom.) The SCREEN is designed to be the same size and proportion on your desktop monitor regardless of screen resolution. The higher the resolution on your desktop, the more crisp and clear the SCREEN will appear. </p>
+<p><img alt="" src="../images/getting-started/image022.png" /></p>
+<p><strong><em>MENU</em></strong><br />
+Will allow you to change Data Tables, Access Various Options, and Print Forms/Reports. Your Menu Items may vary depending on what Application Access you are given.</p>
+<p><strong><em>TOOL BAR</em></strong><br />
+Displays icons that may be clicked to Add, Edit, Delete, Change Records being displayed (Next, Previous, First, Last), Save/Abort a record, Defendant Info, Enter Payment Manager.</p>
+<p><strong><em>DATA RECORD DISPLAY</em></strong><br />
+Shows the Data Fields of the current record in the current Data Table.</p>
+<p><strong><em>STATUS BAR</em></strong><br />
+Displays Data Table Name, Number of Records, Browse/Edit/Add status, INS (Insert)/OW (OverWrite) mode and DateTime.</p>
+<p><img alt="" src="../images/getting-started/image023.png" /></p>
+<p><strong><em>INFORMATION LINE</em></strong><br />
+The horizontal line across the bottom that provides certain information about what is happening. If the line turns red, an error has occurred.  </p>
+<p><strong><em>TABLE Menu Item</em></strong><br />
+The TABLE Menu Item may be used to change which Data Table is being displayed. Clicking on TABLES will reveal a Sub-Menu with various Table Categories which will in turn reveal another Sub-Menu from which the desired Data Table May be Selected. If you exit the Application and then Re-enter it, an attempt will be made to return to the same Data Table and the same Data Table Record.</p>
+<p><img alt="" src="../images/getting-started/image024.png" /></p>
+<p>The TABLES MENU is the means by which you would switch between Cases, Warrants, Bonds, etc. Clicking or Pressing enter on the appropriate menu item will cause you to leave your current Data Table and proceed to the new one.  </p>
+<p>If you just want to temporarily go to a new Data Table, you may hold down the CTRL Key while selecting the Menu Item. The new Data Table will open in a separate window. When finished with the new Data Table you may ESC or X out of that window and return to the same Data Table you were previously on.  </p>
+<p><strong><em>PRINT Menu Item</em></strong><br />
+The PRINT Menu Item allows you to select a Form or a Report to print. Depending on what you are printing a Print Setup Window will appear with various options relating to that Form or Report.</p>
+<p><img alt="" src="../images/getting-started/image025.png" /></p>
+<h2 id="tool-bar">Tool Bar</h2>
+<p>The TOOL BAR is used to access various Add, Edit, Save, Printing and Payment Functions.
+<img alt="" src="../images/getting-started/image002.png" /></p>
+<p><strong><em>ADD RECORD</em></strong><br />
+To add a new record to the currently displayed  Data Table, click on this icon or type CTRL-A.
+<img alt="" src="../images/getting-started/image026.png" /></p>
+<p><strong><em>EDIT RECORD</em></strong><br />
+Click to edit the currently displayed record OR type  CTRL-E OR simply click on the Field you wish to edit (giving it FOCUS)</p>
+<p><img alt="" src="../images/getting-started/image027.png" /></p>
+<p><strong><em>DELETE RECORD</em></strong><br />
+Deletes the currently displayed record. A dialog  window will then come up to confirm you want to permanently delete.  </p>
+<p><img alt="" src="../images/getting-started/image028.png" /> </p>
+<p><strong><em>FIRST, PREVIOUS, NEXT, LAST</em></strong><br />
+Allows you to go to the FIRST or LAST Record in the Data Table or the NEXT or PREVIOUS alphabetically based on the current INDEX. You may change the INDEX under options. For example, you may want the CASES table to be in order based on Case Number or to be in order based on Defendant Name</p>
+<p><img alt="" src="../images/getting-started/image000.jpg" /></p>
+<p><strong><em>QUICK SEARCH (Or F1)</em></strong><br />
+Displays a window asking for input on what search criteria to use in the current Data Table. A list of data records will be displayed allowing you to click on or press Enter on the record you wish to display. For example, clicking on this icon while in the Cases Data Table will produce a window asking you for a Defendant Name, Case Number, Court Date or UTC Number. An appropriate list will then appear allowing you to select a particular record. Entering 'J' will display a list of records whose defendant name starts with J.</p>
+<p><img alt="" src="../images/getting-started/image029.png" /> </p>
+<p><strong><em>PRINT RECORD</em></strong><br />
+Prints the currently displayed record.</p>
+<p><img alt="" src="../images/getting-started/image030.png" /></p>
+<p><strong><em>SAVE RECORD</em></strong><br />
+If you are in Add or Edit mode the current record will be saved. F9 has the same result.  </p>
+<p><img alt="" src="../images/getting-started/image031.png" /></p>
+<p><strong><em>ABANDON RECORD</em></strong><br />
+If you are in Add or Edit mode, the current record will be aborted. Pressing ESC will have the same effect. A window will appear to confirm you are abandoning your work.</p>
+<p><img alt="" src="../images/getting-started/image032.png" /></p>
+<p><strong><em>DITTO RECORD</em></strong><br />
+Will store the current record in a buffer. At any point in the future while editing a different record you may press the F5 key on a data field and the data from this original field will appear. F5 may also be initially used instead of this icon.</p>
+<p><img alt="" src="../images/getting-started/image033.png" /></p>
+<p><strong><em>DEFENDANT INFO</em></strong><br />
+Shows all the data in your system for the current defendant. With Tabs for Cases, Payments, Warrants, Bonds, Profile, and State History. You may Change Defendants or Print various defendant information.</p>
+<p><img alt="" src="../images/getting-started/image034.png" /></p>
+<p><strong><em>PAYMENT MANAGER</em></strong><br />
+Displays the initial window for all pay<br />
+functions including Case Payments, Parking, Miscellaneous, Bonds, etc Ctrl-M (for Money) may used instead of this icon.</p>
+<p><img alt="" src="../images/getting-started/image035.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tables/" class="btn btn-neutral float-right" title="Tables">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../tables/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
