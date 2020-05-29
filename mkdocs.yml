@@ -7,8 +7,9 @@ nav:
     - Payments: payments.md
     - Printing: printing.md
 theme:
-    name: readthedocs
+    name: material
     highlightjs: true
     hljs_languages:
         - yaml
         - rust
+extra_css: [styles.css]
